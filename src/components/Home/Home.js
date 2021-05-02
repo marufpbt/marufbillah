@@ -40,7 +40,7 @@ function Home() {
                 <h1 className="title text-white">
                   based in USA.
              </h1>
-                <Button className="mt-4 downloadCV" variant="primary" href="https://drive.google.com/file/d/1f7MjprPw58cM3vEjiIoQRRVEIBstJMyt/view" target="_blank">
+                <Button className="mt-4 downloadCV" variant="primary" href="https://drive.google.com/file/d/1GzdrziGP6Hti3jDDodSVVHKWgbt-EoJL/view?usp=sharing" target="_blank">
                   <i className="fas fa-download">&nbsp;</i>Get Resume
           </Button>
               </div>
