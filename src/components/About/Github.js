@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Github() {
   const colourTheme = {
-    background: "transparent",
+    background: "black",
     text: "#ffffff",
     grade4: "#8400b8",
     grade3: "#b22ff4",
@@ -20,7 +20,7 @@ function Github() {
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
-        username="soumyajit4419"
+        username="marufpbt"
         blockSize={15}
         blockMargin={5}
         theme={colourTheme}

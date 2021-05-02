@@ -1,46 +1,9 @@
 import React from 'react';
 import './LifeJourney.css';
-import { useSpring, animated, config } from 'react-spring'
-import { useState } from 'react';
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 const LifeJourney = () => {
-	const [flip, set] = useState(false)
-	const { number } = useSpring({
-		reset: true,
-		reverse: flip,
-		from: { number: 0 },
-		number: 100,
-		delay: 3000,
-		config: config.molasses,
-		onRest: () => set(!flip),
-	})
-	const { number1 } = useSpring({
-		reset: true,
-		reverse: flip,
-		from: { number1: 0 },
-		number1: 245,
-		delay: 600,
-		config: config.molasses,
-		onRest: () => set(!flip),
-	})
-	const { number2 } = useSpring({
-		reset: true,
-		reverse: flip,
-		from: { number2: 0 },
-		number2: 320,
-		delay: 600,
-		config: config.molasses,
-		onRest: () => set(!flip),
-	})
-	const { number3 } = useSpring({
-		reset: true,
-		reverse: flip,
-		from: { number3: 0 },
-		number3: 600,
-		delay: 600,
-		config: config.molasses,
-		onRest: () => set(!flip),
-	})
 	return (
 		<section id="count-area" class="py-70 text-center">
 			<div class="container">
@@ -55,7 +18,13 @@ const LifeJourney = () => {
 						<div class="count-wrap">
 							<div class="number-wrap">
 								<i class="fas fa-handshake"></i>
-								<span className="counter"><animated.div className="d-inline">{number.to(n => n.toFixed(0))}</animated.div></span><span>+</span>
+								<span className="counter"> <CountUp end={150} redraw={true}>
+									{({ countUpRef, start }) => (
+										<VisibilitySensor onChange={start} delayedCall>
+											<span ref={countUpRef} />
+										</VisibilitySensor>
+									)}
+								</CountUp>+</span>
 							</div>
 							<span>PROJECTS COMPLETED</span>
 						</div>
@@ -64,7 +33,13 @@ const LifeJourney = () => {
 						<div class="count-wrap">
 							<div class="number-wrap">
 								<i class="fas fa-heart"></i>
-								<span className="counter"><animated.div className="d-inline">{number1.to(n => n.toFixed(0))}</animated.div></span><span>+</span>
+								<span className="counter"><CountUp end={100} redraw={true}>
+									{({ countUpRef, start }) => (
+										<VisibilitySensor onChange={start} delayedCall>
+											<span ref={countUpRef} />
+										</VisibilitySensor>
+									)}
+								</CountUp>+</span>
 							</div>
 							<span>HAPPY CLIENTS</span>
 						</div>
@@ -73,7 +48,14 @@ const LifeJourney = () => {
 						<div class="count-wrap">
 							<div class="number-wrap">
 								<i class="far fa-moon"></i>
-								<span className="counter"><animated.div className="d-inline">{number2.to(n => n.toFixed(0))}</animated.div></span><span>+</span>
+								<span className="counter">
+								<CountUp end={500} redraw={true}>
+									{({ countUpRef, start }) => (
+										<VisibilitySensor onChange={start} delayedCall>
+											<span ref={countUpRef} />
+										</VisibilitySensor>
+									)}
+								</CountUp>+</span>
 							</div>
 							<span>SLEEPLESS NIGHTS</span>
 						</div>
@@ -82,7 +64,13 @@ const LifeJourney = () => {
 						<div class="count-wrap">
 							<div class="number-wrap">
 								<i class="fas fa-trophy"></i>
-								<span className="counter"><animated.div className="d-inline">{number3.to(n => n.toFixed(0))}</animated.div></span><span>+</span>
+								<span className="counter"><CountUp end={50} redraw={true}>
+									{({ countUpRef, start }) => (
+										<VisibilitySensor onChange={start} delayedCall>
+											<span ref={countUpRef} />
+										</VisibilitySensor>
+									)}
+								</CountUp>+</span>
 							</div>
 							<span>WINNING AWARDS</span>
 						</div>

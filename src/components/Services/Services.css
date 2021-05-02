@@ -1,3 +1,8 @@
+#services-area{
+		position: relative !important;
+		background-image: #101010 !important;
+		color: white !important;
+}
 .icon-wrapper {
 	position: relative;
 }

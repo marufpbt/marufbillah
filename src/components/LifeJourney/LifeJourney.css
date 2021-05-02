@@ -1,6 +1,5 @@
 #count-area{
-	background:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url(../../Assets/count-bg.jpg) no-repeat center center;
-	background-attachment:fixed;
+	background:#101010;
 }
 .number-wrap i {
 font-size: 50px;
@@ -18,6 +17,14 @@ z-index:100;
 }
 .count-wrap{
 	position:relative;
+	border-radius: 8px;
+    transition: all 1s cubic-bezier(.645, .045, .355, 1);
+}
+.count-wrap:hover{
+	border-radius: 8px;
+	transition: all 1s cubic-bezier(.645, .045, .355, 1);
+	box-shadow: 0 10px 25px 10px rgb(0 0 0 / 10%);
+    transform: translateY(-10px);
 }
 .count-wrap:before {
 position: absolute;
@@ -28,7 +35,7 @@ left: 0;
 top: 0;
 bottom: 0;
 right: 0;
-background: #000;
+background: #191919;
 opacity: 0.8;
 }
 .count-wrap>span{

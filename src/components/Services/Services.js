@@ -9,9 +9,9 @@ const Services = () => {
 				<div className="row pb-5 ">
 					<div className="container">
 						<div className="work-top">
-							<div className="col-lg-12 text-center">
-								<h2 className="title text-white" style={{ fontFamily: 'Poppins,sans-serif;' }}>My Awesome Service</h2>
-								<p className="lead text-light">Some of my main services are listed below. I provide different kind of services.</p>
+							<div className=" text-center text-white mb-5">
+								<h5 style={{ color: '#f9004d', letterSpacing: '2px', fontWeight: 'bold' }}>Services</h5>
+								<h1>Some of My Services</h1>
 							</div>
 						</div>
 					</div>
@@ -23,9 +23,19 @@ const Services = () => {
 							<div className="laptop-icon">
 								<i className="fas fa-laptop"></i>
 							</div>
-							<h3 className="title text-white">WEB DESIGN</h3>
-							<p className="lead">Qualified web designs and attractive effects which catches visitor's Eye.</p>
+							<h3 className="title text-white mt-4">FRONT END WEB APP</h3>
+							<p className="lead">I can make a Fully responsive front end and static website with react. </p>
 							<span className="number">1</span>
+						</div>
+					</div>
+					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
+						<div className="icon-wrapper wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
+							<div className="laptop-icon">
+								<i className="fas fa-search"></i>
+							</div>
+							<h3 className="title text-white mt-4">E-COMMERCE WEB APP</h3>
+							<p className="lead">I do build an e-commerce web app with React, MongoDB and Stripe Payment Gateway.</p>
+							<span className="number">2</span>
 						</div>
 					</div>
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
@@ -33,21 +43,12 @@ const Services = () => {
 							<div className="laptop-icon">
 								<i className="fas fa-exchange-alt"></i>
 							</div>
-							<h3 className="title text-white">WEB DEVELOPMENT</h3>
+							<h3 className="title text-white  mt-4">WEB DEVELOPMENT</h3>
 							<p className="lead">Clean and fresh issue free code to make your website dynamic perfectly.</p>
-							<span className="number">2</span>
-						</div>
-					</div>
-					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInRight animate__fast animate__delay-1s">
-							<div className="laptop-icon">
-								<i className="fas fa-th-large"></i>
-							</div>
-							<h3 className="title text-white">WORDPRESS</h3>
-							<p className="lead">Wordpress, Magento, E-Commerce, Prestashop Theme Development & Customization.</p>
 							<span className="number">3</span>
 						</div>
 					</div>
+
 				</div>
 				<div className="row text-center pt-0 pt-md-3 pt-lg-5  ">
 
@@ -56,7 +57,7 @@ const Services = () => {
 							<div className="laptop-icon">
 								<i className="fas fa-edit"></i>
 							</div>
-							<h3 className="title text-white">RESPONSIVE DESIGN</h3>
+							<h3 className="title text-white mt-4">RESPONSIVE DESIGN</h3>
 							<p className="lead">Responsive Design which will be working almost all browsers and screens, Mobile, TaB, PC etc</p>
 							<span className="number">4</span>
 						</div>
@@ -66,18 +67,19 @@ const Services = () => {
 							<div className="laptop-icon">
 								<i className="fas fa-window-restore"></i>
 							</div>
-							<h3 className="title text-white">WEB RESEARCH</h3>
-							<p className="lead">Admin Support, Microsoft Word, Excel, Powerpoint Slide, Internet marketing, Cpa marketing, Data mining etc etc.</p>
+							<h3 className="title text-white mt-4">FULL STACK WEB APP</h3>
+							<p className="lead">Using MERN Stack I usually make Full Stack Web Application and For Authentication Firebase.</p>
 							<span className="number">5</span>
 						</div>
 					</div>
+
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
+						<div className="icon-wrapper wow animate__animated animate__fadeInRight animate__fast animate__delay-1s">
 							<div className="laptop-icon">
-								<i className="fas fa-search"></i>
+								<i className="fas fa-th-large"></i>
 							</div>
-							<h3 className="title text-white">SEO</h3>
-							<p className="lead">Search Engine Optimization to make website high ranked and bring expected traffics on websites.</p>
+							<h3 className="title text-white mt-4">WORDPRESS</h3>
+							<p className="lead">Wordpress, Magento, E-Commerce, Prestashop Theme Development & Customization.</p>
 							<span className="number">6</span>
 						</div>
 					</div>

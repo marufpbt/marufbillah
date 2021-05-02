@@ -6,15 +6,16 @@ import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import burj from "../../Assets/Projects/burj.png";
 import shop from "../../Assets/Projects/shop.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import eeg from "../../Assets/Projects/eeg.gif";
 import country from "../../Assets/Projects/country.png";
 import algo from "../../Assets/Projects/algo.png";
 import plant from "../../Assets/Projects/plant.jpeg";
-import doctors from "../../Assets/app.jpg";
-import hashtech from "../../Assets/hashtech.jpg";
+import hashtech from "../../Assets/Projects/hashtech.png";
+import doctors from "../../Assets/Projects/doctors-portal.png";
+import burj from "../../Assets/Projects/burj-al-arab.png";
+import panda from "../../Assets/Projects/panda-ecommerce.png";
 import Button from "react-bootstrap/Button";
 
 function Projects() {
@@ -22,32 +23,32 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
+      <h5 style={{color:'#f9004d',letterSpacing:'2px', fontWeight:'bold'}}>Projects</h5>
+                    <h1>My Recent Works</h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={hashtech}
               isBlog={false}
               title="Hastech IT Solution BD"
-              description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ipsa."
+              description=" It is an agency website, which serves some services like web development, graphics design, mobile application design, photography etc. "
               link="https://github.com/marufpbt/hashtech-client"
               live="https://hashtechitsolutionbd.web.app/"
+              tech="Technology used:"
+              techdesc="React, Bootstrap4, Node, Express, MongoDB, Firebase, React Router"
             />
 
           </Col>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={doctors}
               isBlog={false}
               title="Doctor's Portal"
-              description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ipsa."
+              description=" A Single page web app with dashboard where people can pick the date and time and fix an appointment. "
               link="https://github.com/marufpbt/doctors-portal-client"
               live="https://doctors-portal-marufpbt.web.app/"
+              tech="Technology used:"
+              techdesc="React, Bootstrap4, Node, Express, MongoDB, Firebase, React Router"
             />
 
           </Col>
@@ -56,21 +57,25 @@ function Projects() {
               imgPath={burj}
               isBlog={false}
               title="Burj Al Arab"
-              description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ipsa."
+              description="A Single page web app with dashboard where people can pick the date and time and fix room booking."
               link="https://github.com/marufpbt/burj-al-arab"
               live="https://burj-al-arab-59182.web.app/"
+              tech="Technology used:"
+              techdesc="React, Bootstrap4, Node, Express, MongoDB, Firebase, React Router"
             />
 
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={shop}
+              imgPath={panda}
               isBlog={false}
               title="Panda Ecommerce"
-              description=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ipsa."
+              description="A single page ecommerce app where people are able to select shopping in their cart and checkout the cart with their information ."
               link="https://github.com/marufpbt/shopping-cart"
               live="https://marufpbt.github.io/panda-ecommerce-bootstrap/"
+              tech="Technology used:"
+              techdesc="HTML5, CSS3, Bootstrap4, GitHub Hosting"
             />
           </Col>
 
@@ -84,7 +89,7 @@ function Projects() {
             <BlogCard
               imgPath={editor}
               link="https://www.gitbook.com/"
-              title="Cracking Interview"
+              title="Freelancing"
               site="gitbook.com"
             />
           </Col>
@@ -92,7 +97,7 @@ function Projects() {
             <BlogCard
               imgPath={plant}
               link="https://medium.com/"
-              title="Plant AI"
+              title="Flexbox"
               site="medium.com"
             />
           </Col>

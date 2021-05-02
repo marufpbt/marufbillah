@@ -71,22 +71,20 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/blog"
+                onClick={() => updateExpanded(false)}
+              >
+                <i className="fab fa-codepen"></i> Blogs
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <i className="far fa-file-alt"></i> Resume
               </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/marufpbt"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <i className="fas fa-code-branch"></i>{" "}
-                <i className="far fa-star"></i>
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
