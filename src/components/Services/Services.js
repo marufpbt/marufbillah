@@ -29,7 +29,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
+						<div className="icon-wrapper wow animate__animated animate__fadeInUp animate__fast animate__delay-1s">
 							<div className="laptop-icon">
 								<i className="fas fa-search"></i>
 							</div>
@@ -39,7 +39,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInUp animate__fast animate__delay-1s ">
+						<div className="icon-wrapper wow animate__animated animate__fadeInRight animate__fast animate__delay-1s ">
 							<div className="laptop-icon">
 								<i className="fas fa-exchange-alt"></i>
 							</div>
@@ -53,7 +53,7 @@ const Services = () => {
 				<div className="row text-center pt-0 pt-md-3 pt-lg-5  ">
 
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInRight animate__fast animate__delay-1s ">
+						<div className="icon-wrapper wow animate__animated animate__fadeInLeft animate__fast animate__delay-1s ">
 							<div className="laptop-icon">
 								<i className="fas fa-edit"></i>
 							</div>
@@ -63,7 +63,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="col-12  col-md-4  mt-5 mt-md-0 pt-4 pt-md-0">
-						<div className="icon-wrapper wow animate__animated animate__fadeInUp animate__fast animate__delay-1s">
+						<div className="icon-wrapper wow animate__animated animate__fadeInDown animate__fast animate__delay-1s">
 							<div className="laptop-icon">
 								<i className="fas fa-window-restore"></i>
 							</div>
